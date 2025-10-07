@@ -1,14 +1,14 @@
 
     body {
+      background: linear-gradient(to top, #92c5ff, #006adf);
       margin: 0;
       padding: 0;
     }
     .main {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
     }
     header {
-      background: linear-gradient(to bottom, #1d86ff, #006adf);
       color: white;
       padding: 10px;
     }
@@ -23,7 +23,7 @@
      
     }
     nav {
-      background: linear-gradient(to bottom, #1d86ff, #006adf);
+      background: linear-gradient(to top, #5aa7ff, #006adf);
       padding-left: 10px;
       padding-right: 10px;
 
@@ -39,11 +39,8 @@
       width: 100%;
       
     }
+    
     .info-box {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
       text-align: left;
     }
     .info-box h4 {
@@ -68,10 +65,11 @@
       border-radius: 4px;
     }
     footer {
-      background: linear-gradient(to bottom, #1d86ff, #006adf);
+      background: linear-gradient(to top, #5aa7ff, #006adf);
       color: white;
       text-align: center;
-      padding: 15px;
+      padding-left:10px;
+      padding-right: 10px;
       font-size: 14px;
     }
     .bottom-content {

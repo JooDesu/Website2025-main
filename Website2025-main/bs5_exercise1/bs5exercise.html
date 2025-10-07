@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FTDBLUEMOOD</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="booststrap/style.css">
+</head>
+
+<body>
+  <div class="main">
+    <!-- Header -->
+    <header class="text-left ps-3">
+      <h1>FTDBLUEMOOD</h1>
+      <small>SMALL COMPANY SLOGAN GOES HERE</small>
+    </header>
+    <section id="banner to footer" class="container border border-info bg-info pt-3 mb-3">
+      <!-- 這個id=banner to footer 是將banner到footer的部分框起來 -->
+      <!-- border邊綫 -->
+      <!-- hero/banner(兩個標簽都可以使用給網頁)-->
+      <section class="hero">
+        <img src="images/Header.jpg" alt="banner" class="col-12">
+
+      </section>
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md">
+        <!-- navbar 在預設值可以點擊藍綫鏈接不存在 -->
+        <div class="container justify-content-center">
+          <!-- justify content center(force the container to be placed at the center) -->
+          <ul class="navbar-nav">
+            <li class="nav-item px-4">
+              <!-- x=set both left and right -->
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <!-- #=是用於可以點擊鏈接 -->
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+              <!-- aria-disabled=true-remove the blue line under hyperlinks -->
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- 這個部分是包括Info Boxes到Bottom Section的一個border -->
+      <section id="content area" class="container border bg-white">
+        <!-- Info Boxes -->
+        <div class="container col-12 px-2">
+          <!-- p=padding(最内部的框架) x=set both padding left and right -->
+          <div class="row g-3">
+            <div class="col-4">
+              <div class="info-box">
+                <h4>Your Options</h4>
+                <img src="images/Your Opinion.png" alt="Your Opinion">
+                <p><a href="#">Cras hendrerit est ac libero ornare</a><br>Donec interdum dignissim risus et vestibulum.
+                </p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="info-box">
+                <h4>Company News</h4>
+                <img src="images/Company News.png" alt="Company News">
+                <p><a href="#">Donec tincidunt dignissim risus ut</a><br>Donec eget nisi id magna tempor iaculis.</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="info-box">
+                <h4>Have a Question?</h4>
+                <img src="images/Question.png" alt="Question">
+                <p><a href="#">Cras hendrerit est ac libero ornare</a><br>Donec interdum dignissim risus etvestibulum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle Content -->
+        <div class="container-fluid px-3">
+          <!-- container fluid=是可以跟著版面化變大小 -->
+          <!-- m=margin（最外面的框架）y=set both margin padding for top and bottom -->
+          <div class="row">
+            <div class="col-md-8">
+              <!-- md=屬於一個medium device的screen width -->
+              <div class="middle-content">
+                <h5>Etiam felis ipsum</h5>
+                <div class="row g-3 md-3">
+                  <!-- g=gap -->
+                  <div class="col-6 col-md-3">
+                    <img src="images/Girl 1.jpg" alt="Girl" class="img-fluid mb-2">
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <p>Vivamus ut risus sit amet ante tempus dapibus eget et <a href="#">sapien</a>. In blandit ante at
+                      massa
+                    </p>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <img src="images/People.jpg" alt="People" class="img-fluid mb-2">
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <p>In in dui aget nibh viverra mollis eget eget lacus. In non velt augue. Quisque dolor elit.</p>
+                  </div>
+                </div>
+                <div class="row g-3">
+                  <div class="col-6 col-md-3">
+                    <img src="images/Man 2.jpg" alt="Man" class="img-fluid mb-2">
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <p>Koreet Aliquam leo telus, dolor <a href="#">dapibume Quisquenullacol</a>. Vestibibulum libero
+                      rist, porta
+                      vel.</p>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <img src="images/Man 1.jpg" alt="Man" class="img-fluid mb-2">
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <p>Nulliam Vehicula edio in tellus vernenatis a facilsis metus mollis. Futice tempus</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="middle-content">
+                <h5>Duis blandit ultrices</h5>
+                <ul class="link-list">
+                  <li><a href="#">Donec Tincidunt Purus Vitae</a></li>
+                  <li><a href="#">Donec Tincidunt Ligula Vitae</a></li>
+                  <li><a href="#">Cras Porttltor Hendrerit Eusmod</a></li>
+                  <li><a href="#">Cum Sociis Natique Penatibus</a></li>
+                  <li><a href="#">Quisque Malnis Ugala Commooo</a></li>
+                  <li><a href="#">Donec Non Egestas Lectus Lacus</a></li>
+                  <li><a href="#">Curastur Dognissim Commooo</a></li>
+                  <li><a href="#" class="fw-bold">READ MORE</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="container my-3 px-4">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <!-- x=left and right -->
+              <div class="bottom-content">
+                <h6>Nullam consectetur</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et quam magna. Morbi sed elit erat.
+                  Sed
+                  placerat, diam at mollis tempor odio.</p>
+                <p><a href="#" class="fw-bold">READ MORE</a></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="bottom-content">
+                <h6>In semper massa</h6>
+                <img src="images/Blue Image.jpg" alt="Blue Image">
+                <p>Praesent vestibulum molestie lacus. Aenean cum sociis natoque penatibus et magnis dis parturient
+                  montes.
+                </p>
+                <p><a href="#" class="fw-bold">READ MORE</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+        <p>Copyright © 2011. Designed by Free Web Templates, coded by Free Flash Templates</p>
+        <p><a href="#" class="text-white text-decoration-underline">Privacy Policy</a> |
+          <a href="#" class="text-white text-decoration-underline">Terms of Use</a>
+        </p>
+      </footer>
+    </section>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
