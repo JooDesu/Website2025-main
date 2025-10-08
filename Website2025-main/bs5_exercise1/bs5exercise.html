@@ -22,11 +22,42 @@
       <!-- 這個id=banner to footer 是將banner到footer的部分框起來 -->
       <!-- border邊綫 -->
       <!-- hero/banner(兩個標簽都可以使用給網頁)-->
-      <section class="hero">
-        <img src="images/Header.jpg" alt="banner" class="col-12">
 
-      </section>
+      <!-- Carousel -->
+       <!-- allow user to scroll through banner  -->
+      <div id="banner" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="3"></button>
+        </div>
 
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Header.jpg" alt="Header 1" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images/header 2.jpg" alt="Header 2" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images/header3.jpg" alt="Header 3" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images/header4.jpg" alt="Header 4" class="d-block w-100">
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
       <!-- Navigation -->
       <nav class="navbar navbar-expand-md">
         <!-- navbar 在預設值可以點擊藍綫鏈接不存在 -->
@@ -37,26 +68,26 @@
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <!-- collapsibleNavbar=top bar menu selection when screen have become small -->
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <!-- x=set both left and right -->
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-              <!-- #=是用於可以點擊鏈接 -->
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
-            </li>
-          </ul>
-        </div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <!-- x=set both left and right -->
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <!-- #=是用於可以點擊鏈接 -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+              </li>
+            </ul>
+          </div>
       </nav>
       <!-- 這個部分是包括Info Boxes到Bottom Section的一個border -->
       <section id="content area" class="container border bg-white">
