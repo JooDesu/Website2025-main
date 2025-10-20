@@ -1,11 +1,21 @@
 body {
-      background:linear-gradient(to bottom , black , rgb(37, 37, 37));
-      background-repeat: no-repeat;
-      margin: 0;
-      padding: 0;
-    }
-    .main {
-      max-width: 1680px;
-      margin: 0 auto;
-    }
-    
+  background: linear-gradient(to bottom, black, rgb(37, 37, 37));
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.menuselection h1 {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+.transparent-border {
+  border-color: transparent !important;
+}
+
