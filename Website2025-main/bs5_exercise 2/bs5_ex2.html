@@ -15,16 +15,19 @@
 <body>
     <div class="main">
         <div
-            style="background-image: url('images/Helldivers%20Banner.jpg'); background-size: cover; background-position: center ; background-repeat: no-repeat; height: 100vh;">
+            style="background-image: url('images/Helldivers Banner.jpg'); background-size: cover; background-position: center ; background-repeat: no-repeat; height: 100vh;">
             <!-- background size:cover 是將該背景圖片將這個網頁覆蓋 -->
             <!-- background-repeat:no repeat 確保該背景圖不會重複 -->
             <!-- height: *n*vh 是將該背景圖片占網頁的高度比如如果是100vh將會占整個頁面如果是50vh只會佔一半-->
-            <header class="container-fluid py-3">
-                <img src="images/Helldiver%20Logo.png" alt="HellDivers Logo" class="img-fluid mx-auto d-block" width="400">
+
+            <header class="container-fluid py-1 px-1">
+                <img src="images/Latest Update Banner.png" alt="HellDivers 2 Title" class="img-fluid mx-auto d-block"
+                    width="300">
+                <!-- image-fluid 讓圖片根據網頁頁面進行調整 -->
             </header>
 
-            <nav class="container-fluid col-12 py-3">
-                <div class="menuselection">
+            <section id="menu" class="container-fluid col-12 py-3">
+                <div class="menu">
                     <div class="row">
                         <div class="container-fluid col-sm-4">
                             <ul class="ps-1">
@@ -54,10 +57,10 @@
                                 </a>
                             </ul>
                         </div>
-                        <div class="container-fluid col-sm-4 justify-content-center">
-                            <img src="images/Helldiver Circle.png" alt="HellDivers images" width="450" height="300" class="img-fluid mx-auto d-block rounded-pill border-dark">
+                        <div class="container-fluid col-sm-4">
+                            <img src="images/Event Banner.png" alt="HellDivers images" width="500"
+                                class="img-fluid mx-auto my-auto d-block border-dark rounded-pill px-2 py-2 bg-dark">
                         </div>
-
                         <div class="container-fluid col-sm-4">
                             <ul class="pe-1">
                                 <a href="#">
@@ -85,11 +88,175 @@
                                 </a>
                             </ul>
                         </div>
-
                     </div>
-            </nav>
-        </div>
+                </div>
+            </section>
 
+            <section id="title" class="container-fluid col-12">
+                <div class="title">
+                    <h3>Latest Update</h3>
+                </div>
+            </section>
+
+            <section id="contentarea" class="container-fluid col-12">
+                <div class="contentarea">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler bg-dark border border-light text-white" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                <a class="navbar-brand" href="#">
+                                    <img src="images/Music Logo.png" alt="Logo" style="width:40px;"
+                                        class="rounded-pill" id="icon"><a>Click Icon Play</a>
+                                        <audio id="mysong">
+                                             <source src="audio file/05. A Cup of Liber-tea (Helldivers 2 Main Theme).mp3">
+                                        </audio>
+                                        <script>
+                                            var mysong=document.getElementById("mysong")
+                                            var icon=document.getElementById("icon")
+
+                                            icon.onclick =function(){
+                                                mysong.play();
+                                            }
+                                        //  以上是如何加入音樂的指令
+                                        </script>
+                                </a>
+                            </button>
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="container-fluid border border-light bg-dark px-2 py-2">
+
+                                    <a class="nav-link" aria-current="page" href="#">
+                                        <h4>Track 1</h4>
+                                    </a>
+
+
+                                    <a class="nav-link" href="#">
+                                        <h4>Track 2</h4>
+                                    </a>
+
+
+                                    <a class="nav-link" href="#">
+                                        <h4>Track 3</h4>
+                                    </a>
+
+
+                                    <a class="nav-link" href="#">
+                                        <h4>Track 4</h4>
+                                    </a>
+
+
+                                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                                        <h4>Track
+                                            5</h4>
+                                    </a>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="container-fluid col-12">
+                        <div class="row">
+                            <section id="Info" class="col-sm-4">
+                                <div class="Info">
+                                    <h5>
+                                        Join The Helldivers.
+                                    </h5>
+                                    <h5>
+                                        Withness the greatness of spreading democracy.
+                                    </h5>
+                                    <img src="images/Decoration 1.jpg" alt="Decoration" width="300"
+                                        class="img-fluid mx-auto d-block">
+                                </div>
+                            </section>
+
+                            <section id="Info" class="col-sm-4">
+                                <div class="Info">
+                                    <h5>
+                                        New Enemies Being Added To The Update.
+                                    </h5>
+                                    <h5>
+                                        Face The New Horrors Within The Gloom.
+                                    </h5>
+                                    <div id="Enemies" class="carousel slide" data-bs-ride="carousel">
+                                        <!-- Indicators/dots -->
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#Enemies" data-bs-slide-to="0"
+                                                class="active"></button>
+                                            <button type="button" data-bs-target="#Enemies"
+                                                data-bs-slide-to="1"></button>
+                                        </div>
+                                        <!-- The slideshow/carousel -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="images/Hive Lord.png" alt="Hive Lord" class="d-block w-100">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/Dragon Roach.jpg" alt="Dragon Roach"
+                                                    class="d-block w-100">
+                                            </div>
+                                        </div>
+                                        <!-- Left and right controls/icons -->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#Enemies"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#Enemies"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="Info" class="col-sm-4">
+                                <div class="Info">
+                                    <h5>
+                                        Newest Warbanner Have Been Release.
+                                    </h5>
+                                    <h5>
+                                        Equip Your New Gear And Cause Chaos.
+                                    </h5>
+                                    <div id="Warbond" class="carousel slide" data-bs-ride="carousel">
+                                        <!-- Indicators/dots -->
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#Warbond" data-bs-slide-to="0"
+                                                class="active"></button>
+                                            <button type="button" data-bs-target="#Warbond"
+                                                data-bs-slide-to="1"></button>
+                                        </div>
+                                        <!-- The slideshow/carousel -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="images/Warbond.png" alt="Warbond" class="d-block w-100">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/Warbond Info.png" alt="Warbond Info"
+                                                    class="d-block w-100">
+                                            </div>
+                                        </div>
+                                        <!-- Left and right controls/icons -->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#Warbond"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#Warbond"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>Copyrighted © 2025.Designed and Coded By Joo.All assets are provided by Arrowhead.</p>
+                <p><a href="#" class="text-white text-decoration-underline">Privacy Policy</a> |
+                    <a href="#" class="text-white text-decoration-underline">Terms of Use</a>
+            </footer>
+        </div>
     </div>
 
 </body>
