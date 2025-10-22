@@ -8,7 +8,11 @@ body {
   max-width: 1680px;
   margin: 0 auto;
 }
-
+/* .menu {
+ background-image:url("../images/Event\ Banner.png");
+ background-size: 100%;
+ background-repeat: no-repeat;
+} */
 .menu h1 {
   display: block;
   background: rgb(255, 187, 0);

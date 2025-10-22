@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js">
+    </script>
+</head>
+
+<body>
+    <div id="myapp1">
+        {{msg}}
+        <div>
+            {{msg2}}
+        </div>
+        <img v-bind:src="`images/${msg2}`" alt="example image">
+        <!-- create shortcut path for images -->
+        <!-- <img :src="'images/'+msg2"> -->
+    <div>
+        {{msg3}}
+    </div>
+    <div>
+        <img v-bind:src="`images/${msg3}`" alt="example image" v-show="showMsg3">
+        <!-- v-show can identify rather to show or not shown the image -->
+        <img v-for="item in aryImg" :src="'images/'+item" alt="">
+        <!-- allow user to implement more than one data or images -->
+    </div>
+    </div>
+    <section id="sidebar">
+        <h2>Our work</h2>
+        <ul id="port">
+            <!-- <li><img alt="comp0" src="images/japan.jpg" /></li>
+            <li><img alt="comp1" src="images/a2g.jpg" /></li>
+            <li><img alt="comp2" src="images/foobar.jpg" /></li>
+            <li><img alt="comp3" src="images/rpm.jpg" /></li> -->
+            <li v-for="item in port"><img :src="'images/'+item.img" :alt="item.alt"></li>
+        </ul>
+  </section>
+</body>
+<script>
+    var vueApp = Vue.createApp({
+        data() {
+            return {
+                msg: "Hello!",
+                msg2: "tokyo.jpg",
+                // once short cut is add just need the image file name no need to type in the folder locaton
+                msg3: "a2g.jpg",
+                showMsg3:true,
+                // true=show false=not show
+                aryImg:["foobar.jpg","japan.jpg","rpm.jpg"]
+            }
+        }
+    }).mount("#myapp1");
+var vueApp2 = Vue.createApp({
+    data(){
+        return{
+            title:"Our Work",
+            port:[
+                {alt:"comp0",img: "japan.jpg"},
+                {alt:"comp1",img: "a2g.jpg"},
+                {alt:"comp2",img: "foobar.jpg"},
+                {alt:"comp3",img: "rpm.jpg"}
+            ]
+        }
+    }
+}).mount("#sidebar")
+</script>
+
+</html>
