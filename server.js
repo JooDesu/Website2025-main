@@ -76,7 +76,7 @@ server.post("/contact", (req, res) =>{
         if(err==null){
            res.redirect("/about.html");
         }else{
-            res.redirect("/error.html");
+            res.render("/error.html");
         } 
     })
 })
