@@ -2,6 +2,9 @@ var express = require("express");
 var server = express();
 var bodyParser = require("body-parser");
 
+server.set("view engine", 'ejs');
+server.set("views", __dirname+"/view")
+
 var fileUpload = require("express-fileupload")
 
 server.use(express.static(__dirname + "/Public"));
@@ -64,6 +67,16 @@ server.get("/portfolio", (req, res) => {
 
 })
 
+server.get("/showServices",(req,res)=>{
+    ServiceDB.find({},{_id:0}).then(results=>{
+       
+        res.render("service",{Services:results});
+    }).catch(error=>{
+
+    })
+
+})
+
 server.get("/about", (req, res) => {
     res.send("Welcome " + req.query.user + " to My first NodeJS server!");
 })
@@ -74,9 +87,9 @@ server.post("/contact", (req, res) =>{
     var upFile=req.files.myFile1;
     upFile.mv(__dirname+"/public/upload/"+upFile.name,function(err){
         if(err==null){
-           res.redirect("/about.html");
+            res.render("msg",{message:"I got a file: "+upFile.name});
         }else{
-            res.render("/error.html");
+            res.render("msg",{message:err});
         } 
     })
 })
