@@ -8,6 +8,7 @@ server.use(bodyParser.urlencoded());
 var DB = require("nedb-promises");
 var ServiceDB = DB.create(__dirname + "/Service.db");
 var PortfolioDB = DB.create(__dirname + "/Portfolio.db");
+var ContactDB = DB.create(__dirname+"/Contact.db");
 
 // ServiceDB.insert([
 //     { icon: 'fa-shopping-cart', title: 'E-Commerce', text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur porro laborum fuga repellat necessitatibus corporis nulla, in ex velit recusandae obcaecati maiores, doloremque quisquam similique, tempora aspernatur eligendi delectus! Rem.' },
@@ -61,6 +62,10 @@ server.get("/portfolio", (req, res) => {
 
 server.get("/about", (req, res) => {
     res.send("Welcome " + req.query.user + " to My first NodeJS server!");
+})
+
+server.post("/contact", (req, res) =>{
+    ContactDB.insert(req.body);
 })
 
 server.listen(8080)
